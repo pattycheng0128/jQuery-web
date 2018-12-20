@@ -1,109 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
-        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
 
-        <style> 
-            #demo{
-                width: 740px;
-                height: 300px;
-                background-color: orange;
-                margin-top: 10px;
-            }
-            .main{
-                padding-left: 100px;
-                padding-top:20px;
-            }
-            button{
-                background-color:DarkSalmon ;
-                color: white;
-                padding: 10px;
-                margin-right: 10px;
-                width: 100px;
-                text-align: center;
-            }
-        </style>
 
-        <script>
-            $(document).ready(init);
-            function init(){
-                $('#show').click(showHandler);
-                $('#hide').click(hideHandler);
-                $('#slideDown').click(slideDownHandler)
-                $('#slideUp').click(slideUpHandler)
-                $('#fadeIn').click(fadeInHandler)
-                $('#fadeOut').click(fadeOutHandler)
-                $('#slideToggle').click(slideToggleHandler)
-                $('#fadeToggle').click(fadeToggleHandler)
-            }
-            function showHandler(){
-                $('#demo').show(3000);
-            }
-            function hideHandler(){
-                $('#demo').hide(3000)
-            }
-            function slideDownHandler(){
-                $('#demo').slideDown(3000)
-            }
-            function slideUpHandler(){
-                $('#demo').slideUp(3000)
-            }
-            function fadeInHandler(){
-                $('#demo').fadeIn(3000)
-            }
-            function fadeOutHandler(){
-                $('#demo').fadeOut(3000)
-            }
-            function slideToggleHandler(){
-                $('#demo').slideToggle(3000)
-            }
-            function fadeToggleHandler(){
-                $('#demo').fadeToggle(3000)
-            }
-
-        
-        </script>
-        
 </head>
+
 <body>
     <div class="wrap">
         <div class="header">
-            <ul type="none">
-                <li>jQuery</li>
-            </ul>
+            <div class="topmenu">
+                <ul>
+                    <li><a href="helloworld.html">JavaScript</a></li>
+                    <li><a href="hide_show.html">jQuery</a></li>
+                    <li><a href="css_html.html">CSS/HTML</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
         </div>
-        <div class="clear"></div>
-        <div class="content">
+        <div class="main">
             <div class="sidemenu">
                 <ul>
                     <li><a href="hide_show.html">Hide/Show</a></li>
-                    <li><a href="#">XXX</a></li>
-                    <li><a href="#">XXX</a></li>
-                    <li><a href="#">XXX</a></li>
+                    <li><a href="animate.html">Animate</a></li>
+                    <li><a href="html_tag.html">HTML_Tag</a></li>
+                    <li><a href="selector.html">Selector</a></li>
+                    <li><a href="other.html">Other</a></li>
                 </ul>
+                <div class="clear"></div>
             </div>
-            <div class="menu">
-                <div class="main">
-                    <button id="show">show</button>
-                    <button id="hide">hide</button>
-                    <button id="slideDown">slideDown</button>
-                    <button id="slideUp">slideUp</button>
-                    <button id="fadeIn">fadeIn</button>
-                    <button id="fadeOut">fadeOut</button>
-                    <button id="slideToggle">slideToggle</button>
-                    <button id="fadeToggle">fadeToggle</button>
-                    <div id="demo"><img src="image/balloon.jpg" style="width: 740px;"></div>
-                </div>
+            <div class="content">
+                <h2>課程範例</h2>
+                <ul>
+                    <li><a href="hide_show_exe1.html">hide_show_exe1</a></li>
+                    <li><a href="hide_show_exe2.html">hide_show_exe2</a></li>
+                    <li><a href="hide_show_exe3.html">hide_show_exe3</a></li>
+                    <li><a href="hide_show_exe4.html">hide_show_exe4</a></li>
+                    <li><a href="hide_show_exe5.html">hide_show_exe5</a></li>
+                    <li><a href="hide_show_exe6.html">hide_show_exe6</a></li>
+                </ul>
+                <div class="clear"></div>
             </div>
         </div>
-        <div class="clear"></div>
-        <div class="footer"></div>
+
     </div>
-   
+
 </body>
+
 </html>

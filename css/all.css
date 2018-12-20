@@ -49,58 +49,92 @@ table {
 
 /* design */
 body{
-    margin: 0 auto;
-    padding: 0;
+	background-color: #F5F5DC;
 }
-.header{
+.wrap{
+	margin: 0 auto;
+	width: 100%;
+
+}
+/* 標題區塊 */
+.topmenu{
     height: 50px;
 	background-color: MistyRose ;
-	position: fixed;
-    top:0px;
-    left:0px;
-    width:100%;
+	min-width: 700px;
 }
-.header ul{
-    float: left;
-    margin-left: 50%;
+.topmenu ul{
+	float: left;
+	margin-left:40%;
 }
-.header ul li{
-    float: right;
-    font-size: 30px;
-    color: gray;
-    line-height: 50px;
+.topmenu ul li{
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 15px;
+	border-right: 1px solid white;
 }
-.clear{
-    clear: both;
+.topmenu li a{
+	text-decoration: none;
+	color: gray;
+	font-size: 20px;
 }
-.content{
-	max-width: 1200px;
-    min-width: 1000px;
+/* 內容 */
+.main{
 	margin: auto;
-	margin-top:50px;
+	width:90%;
+	opacity: 0.8;
+	min-width: 700px;
 }
-.sidemenu{
+ .sidemenu{
 	box-sizing: border-box;
 	width: 20%;
 	float: left;
-	height:800px;
-	border-right: 1px solid #C0C0C0;
+	border-right: 1px solid #DCDCDC;
 }
-.sidemenu li,li a{
+.sidemenu li{
 	text-decoration: none;
 	text-align: center;
-	line-height: 80px;
 	color: gray;
+	padding-top:60px;
+}
+.sidemenu li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: gray;
+	border-bottom: 1px solid #DCDCDC;
 }
 .sidemenu li a:hover{
 	color:purple;
 }
-.menu{
-	width: 80%;
+.content{
+	box-sizing: border-box;
 	float: left;
-	height:800px;
+	width: 80%;
 }
-.footer{
-	height: 50px;
-	background-color: #C0C0C0;
+.content h2{
+	font-size: 20px;
+	font-weight: 800;
+	padding-top: 20px;
+	margin-left: 25%;
+}
+.content li{
+	font-weight: 800;
+	padding-top: 40px;
+	margin-left: 25%;
+}
+.content li a{
+	text-decoration: none;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding:10px;
+	background-color:#FFE4B5;
+	color:gray;
+	
+}
+.content li a:hover{
+	background-color: rgb(238, 144, 81);
+	color: white;
+}
+.clear{
+    clear: both;
 }
